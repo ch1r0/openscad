@@ -298,7 +298,7 @@ if (MSVC)
 
   find_package(harfbuzz CONFIG REQUIRED)
   find_path(HARFBUZZ_INCLUDE_DIRS harfbuzz)
-  target_include_directories(OpenSCAD SYSTEM PRIVATE ${HARFBUZZ_INCLUDE_DIRS}/harfbuzz)
+  target_include_directories(OpenSCAD SYSTEM PRIVATE ${HARFBUZZ_INCLUDE_DIRS})
   target_link_libraries(OpenSCAD PRIVATE harfbuzz::harfbuzz)
 
   find_package(PkgConfig)
