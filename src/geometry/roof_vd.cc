@@ -365,7 +365,9 @@ std::unique_ptr<PolySet> voronoi_diagram_roof(const Polygon2d& poly, double fa, 
       // convex partition (actually a triangulation - maybe do a proper convex partition later)
       Polygon2d face_poly;
       Outline2d outline;
-      outline.vertices = face;
+      for (const auto& vector : face) {
+		  outline.vertices.emplace_back(vector);
+      }
       face_poly.addOutline(outline);
       auto tess = face_poly.tessellate();
       for (const IndexedFace& triangle : tess->indices) {

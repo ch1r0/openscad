@@ -79,10 +79,18 @@ if ( QScintilla_FIND_VERSION AND QT5QSCINTILLA_VERSION_STRING )
 endif ()
 
 
-find_library ( QT5QSCINTILLA_LIBRARY
+find_library ( QT5QSCINTILLA_LIBRARY_RELEASE
   NAMES qt5scintilla2 qscintilla2-qt5 qscintilla2 qscintilla2_qt5
   HINTS ${Qt5Widgets_LIBRARIES}
 )
+
+find_library ( QT5QSCINTILLA_LIBRARY_DEBUG
+  NAMES qt5scintilla2d qscintilla2-qt5d qscintilla2d qscintilla2_qt5d
+  HINTS ${Qt5Widgets_LIBRARIES}
+)
+
+include(SelectLibraryConfigurations)
+select_library_configurations(QT5QSCINTILLA)
 
 set ( QT5QSCINTILLA_LIBRARIES ${QT5QSCINTILLA_LIBRARY} )
 

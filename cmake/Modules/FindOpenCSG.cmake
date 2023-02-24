@@ -7,7 +7,7 @@ if (NOT OPENCSG_INCLUDE_DIR)
   message(STATUS "OPENCSG_DIR: " ${OPENCSG_DIR})
   find_path(OPENCSG_INCLUDE_DIR
             opencsg.h
-            HINTS ${OPENCSG_DIR}/include)
+            HINTS ${OPENCSG_DIR}/include/opencsg)
   find_library(OPENCSG_LIBRARY
                opencsg
                HINTS ${OPENCSG_DIR}/lib)

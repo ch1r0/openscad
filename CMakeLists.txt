@@ -26,6 +26,8 @@ if(POLICY CMP0077) # Let parent project set child project options (used to skip 
   cmake_policy(SET CMP0079 NEW)
 endif()
 
+set(CMAKE_SUPPRESS_REGENERATION true)
+
 include("cmake/Modules/openscad_version.cmake")
 
 option(INFO "Display build configuration info at end of cmake config" ON)
@@ -278,6 +280,8 @@ macro(find_graphics)
 endmacro(find_graphics)
 
 if (MSVC)
+  set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
+
   # Flex lexer options
   set(WINCOMPAT "--wincompat --nounistd")
   target_compile_definitions(OpenSCAD PRIVATE _USE_MATH_DEFINES)
@@ -297,24 +301,23 @@ if (MSVC)
   target_include_directories(OpenSCAD SYSTEM PRIVATE ${HARFBUZZ_INCLUDE_DIRS}/harfbuzz)
   target_link_libraries(OpenSCAD PRIVATE harfbuzz::harfbuzz)
 
-  find_package(unofficial-fontconfig CONFIG REQUIRED)
-  target_link_libraries(OpenSCAD PRIVATE unofficial::fontconfig::fontconfig)
+  find_package(PkgConfig)
+  pkg_search_module(FONTCONFIG REQUIRED Fontconfig)
+  target_link_libraries(OpenSCAD PRIVATE ${FONTCONFIG_LINK_LIBRARIES})
 
-  find_package(unofficial-glib CONFIG REQUIRED)
+  find_package(PkgConfig)
+  pkg_search_module(GLIB2 REQUIRED glib-2.0)
   target_include_directories(OpenSCAD SYSTEM PRIVATE ${GLIB2_INCLUDE_DIRS})
-  target_link_libraries(OpenSCAD PRIVATE unofficial::glib::gio unofficial::glib::glib unofficial::glib::gmodule unofficial::glib::gobject)
+  target_link_libraries(OpenSCAD PRIVATE ${GLIB2_LINK_LIBRARIES})
 
   find_package(double-conversion CONFIG REQUIRED)
   target_link_libraries(OpenSCAD PRIVATE double-conversion::double-conversion)
 
-  find_library(GETTEXT_LIBRARY libintl)
+  find_library(GETTEXT_LIBRARY intl)
   target_link_libraries(OpenSCAD PRIVATE ${GETTEXT_LIBRARY})
 
   # call before setting local CMAKE_MODULE_PATH so we use VCPKG version of FindGLEW
   find_graphics()
-
-  # needed for QtQScintilla, maybe others
-  set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules")
 else()
   set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules")
   if(MXECROSS)
@@ -463,7 +466,8 @@ if(ENABLE_SPNAV)
 endif()
 
 if(ENABLE_CAIRO)
-  find_package(Cairo 1.14 QUIET)
+  # find_package(Cairo 1.14 QUIET)
+  find_package(Cairo QUIET)
   if (CAIRO_VERSION)
     message(STATUS "Cairo: ${CAIRO_VERSION}")
     target_include_directories(OpenSCAD SYSTEM PRIVATE ${CAIRO_INCLUDE_DIRS})

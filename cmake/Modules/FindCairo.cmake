@@ -47,8 +47,10 @@ if (APPLE)
   )
 
   set(CAIRO_INCLUDEDIR "${CAIRO_INCLUDE_DIRS}")
+  set(FINDCAIRO_USE_PKGCONFIG 0)
 else ()
-  pkg_check_modules(CAIRO QUIET cairo)
+  pkg_check_modules(CAIRO QUIET IMPORTED_TARGET cairo)
+  set(FINDCAIRO_USE_PKGCONFIG 1)
 endif ()
 
 message(STATUS "CAIRO_INCLUDEDIR: ${CAIRO_INCLUDEDIR}")
@@ -76,6 +78,10 @@ endif ()
 
 include(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(Cairo REQUIRED_VARS CAIRO_INCLUDE_DIRS CAIRO_LIBRARIES VERSION_VAR CAIRO_VERSION)
+
+if (FINDCAIRO_USE_PKGCONFIG)
+  set(CAIRO_LIBRARIES PkgConfig::CAIRO)
+endif()
 
 mark_as_advanced(
     CAIRO_INCLUDE_DIRS
