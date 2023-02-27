@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\e3db0f71e5e6d733e3a365d606685a7e\comment_lexer.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\e3db0f71e5e6d733e3a365d606685a7e\comment_parser.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\e3db0f71e5e6d733e3a365d606685a7e\lexer.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\e3db0f71e5e6d733e3a365d606685a7e\parser.cxx.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\a09e6ea5f149dfabdf8a786c2de8abf6\OpenSCAD_autogen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\ThirdParty\openscad\CMakeFiles\OpenSCAD_autogen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0098C3FF-875D-3460-86D3-2662D725FEF9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

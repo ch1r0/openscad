@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\a09e6ea5f149dfabdf8a786c2de8abf6\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0098C3FF-875D-3460-86D3-2662D725FEF9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

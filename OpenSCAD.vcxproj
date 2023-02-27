@@ -1,0 +1,1199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B98FFC98-F93A-3FF1-8EBD-26AC7D6CEE13}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>OpenSCAD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OpenSCAD.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openscad</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenSCAD.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openscad</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OpenSCAD.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openscad</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OpenSCAD.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openscad</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/ThirdParty/openscad/submodules/mimalloc/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/harfbuzz" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/glib-2.0" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/lib/glib-2.0/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/opencsg" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/libxml2" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/cairo" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/lzo" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/libpng16" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/pixman-1" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/eigen3" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtCore" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/tools/qt5/mkspecs/win32-msvc" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtWidgets" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtGui" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtMultimedia" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtNetwork" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtOpenGL" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtConcurrent" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtSvg" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtDBus" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtGamepad" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;DEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_REENTRANT;UNICODE;_UNICODE;USE_MIMALLOC;MI_OVERRIDE;MI_LINK_STATIC;_USE_MATH_DEFINES;ENABLE_OPENCSG;OPENCSG_GLEW;ENABLE_CGAL;CGAL_DEBUG;CGAL_USE_GMPXX;ENABLE_LIBZIP;ENABLE_CAIRO;USE_GLEW;USE_QOPENGLWIDGET;ENABLE_DBUS;ENABLE_QGAMEPAD;OPENSCAD_VERSION=2024.09.10;OPENSCAD_SHORTVERSION=2024.09.10;OPENSCAD_YEAR=2024;OPENSCAD_MONTH=9;OPENSCAD_DAY=10;STACKSIZE=8388608;NOGDI;OPENSCAD_OS="Windows";CGAL_USE_GMPXX=1;CGAL_USE_CORE=1;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_CONCURRENT_LIB;QT_SVG_LIB;QT_DBUS_LIB;QT_GAMEPAD_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_REENTRANT;UNICODE;_UNICODE;USE_MIMALLOC;MI_OVERRIDE;MI_LINK_STATIC;_USE_MATH_DEFINES;ENABLE_OPENCSG;OPENCSG_GLEW;ENABLE_CGAL;CGAL_DEBUG;CGAL_USE_GMPXX;ENABLE_LIBZIP;ENABLE_CAIRO;USE_GLEW;USE_QOPENGLWIDGET;ENABLE_DBUS;ENABLE_QGAMEPAD;OPENSCAD_VERSION=2024.09.10;OPENSCAD_SHORTVERSION=2024.09.10;OPENSCAD_YEAR=2024;OPENSCAD_MONTH=9;OPENSCAD_DAY=10;STACKSIZE=8388608;NOGDI;OPENSCAD_OS=\"Windows\";CGAL_USE_GMPXX=1;CGAL_USE_CORE=1;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_CONCURRENT_LIB;QT_SVG_LIB;QT_DBUS_LIB;QT_GAMEPAD_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;D:\ThirdParty\openscad\submodules\mimalloc\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\harfbuzz;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\glib-2.0;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\lib\glib-2.0\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\opencsg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libxml2;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\cairo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\lzo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libpng16;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\pixman-1;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\eigen3;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtCore;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\mkspecs\win32-msvc;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtWidgets;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGui;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtMultimedia;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtNetwork;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtOpenGL;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtConcurrent;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtSvg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtDBus;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGamepad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;D:\ThirdParty\openscad\submodules\mimalloc\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\harfbuzz;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\glib-2.0;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\lib\glib-2.0\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\opencsg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libxml2;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\cairo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\lzo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libpng16;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\pixman-1;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\eigen3;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtCore;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\mkspecs\win32-msvc;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtWidgets;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGui;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtMultimedia;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtNetwork;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtOpenGL;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtConcurrent;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtSvg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtDBus;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGamepad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	Compiling language files</Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/ThirdParty/openscad/Debug/openscad.exe -installedDir D:/ThirdParty/openscad/vcpkg_installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\msys64\usr\bin\sh.exe D:/ThirdParty/openscad/scripts/translation-make.sh 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>submodules\mimalloc\Debug\mimalloc-static.lib;vcpkg_installed\x64-windows\debug\lib\boost_filesystem-vc140-mt-gd.lib;vcpkg_installed\x64-windows\debug\lib\boost_system-vc140-mt-gd.lib;vcpkg_installed\x64-windows\debug\lib\boost_regex-vc140-mt-gd.lib;vcpkg_installed\x64-windows\debug\lib\boost_program_options-vc140-mt-gd.lib;vcpkg_installed\x64-windows\debug\lib\fontconfig.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\bz2.lib;vcpkg_installed\x64-windows\lib\libpng16.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlidec.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\lib\libexpat.lib;vcpkg_installed\x64-windows\debug\lib\glib-2.0.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\lib\pcre2-8.lib;vcpkg_installed\x64-windows\debug\lib\double-conversion.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\debug\lib\opencsg.lib;vcpkg_installed\x64-windows\debug\lib\glew32d.lib;opengl32.lib;glu32.lib;vcpkg_installed\x64-windows\debug\lib\zip.lib;vcpkg_installed\x64-windows\debug\lib\freetyped.lib;vcpkg_installed\x64-windows\debug\lib\libxml2.lib;vcpkg_installed\x64-windows\debug\lib\cairo.lib;vcpkg_installed\x64-windows\debug\lib\lzo2.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\fontconfig.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\lib\libexpat.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\bz2.lib;vcpkg_installed\x64-windows\lib\libpng16.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlidec.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\debug\lib\pixman-1.lib;vcpkg_installed\x64-windows\debug\lib\Qt5Multimediad.lib;vcpkg_installed\x64-windows\debug\lib\Qt5OpenGLd.lib;vcpkg_installed\x64-windows\debug\lib\Qt5Concurrentd.lib;vcpkg_installed\x64-windows\debug\lib\Qt5Networkd.lib;vcpkg_installed\x64-windows\debug\lib\Qt5Svgd.lib;vcpkg_installed\x64-windows\debug\lib\qscintilla2_qt5d.lib;vcpkg_installed\x64-windows\debug\lib\Qt5DBusd.lib;vcpkg_installed\x64-windows\debug\lib\Qt5Gamepadd.lib;psapi.lib;shell32.lib;user32.lib;advapi32.lib;bcrypt.lib;vcpkg_installed\x64-windows\debug\lib\glib-2.0.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\lib\pcre2-8.lib;vcpkg_installed\x64-windows\debug\lib\opencsg.lib;vcpkg_installed\x64-windows\debug\lib\zip.lib;vcpkg_installed\x64-windows\debug\lib\freetyped.lib;vcpkg_installed\x64-windows\debug\lib\libxml2.lib;vcpkg_installed\x64-windows\debug\lib\cairo.lib;vcpkg_installed\x64-windows\debug\lib\lzo2.lib;vcpkg_installed\x64-windows\debug\lib\pixman-1.lib;vcpkg_installed\x64-windows\debug\lib\qscintilla2_qt5d.lib;vcpkg_installed\x64-windows\debug\lib\harfbuzz.lib;vcpkg_installed\x64-windows\debug\lib\freetyped.lib;opengl32.lib;glu32.lib;vcpkg_installed\x64-windows\debug\lib\gmpxx.lib;vcpkg_installed\x64-windows\debug\lib\mpfr.lib;vcpkg_installed\x64-windows\debug\lib\gmp.lib;vcpkg_installed\x64-windows\debug\lib\Qt5Widgetsd.lib;vcpkg_installed\x64-windows\debug\lib\Qt5Guid.lib;vcpkg_installed\x64-windows\debug\lib\Qt5Cored.lib;vcpkg_installed\x64-windows\debug\lib\manual-link\qtmaind.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -subsystem:windows -stack:8388608</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ThirdParty/openscad/Debug/openscad.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ThirdParty/openscad/Debug/openscad.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/ThirdParty/openscad/submodules/mimalloc/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/harfbuzz" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/glib-2.0" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/lib/glib-2.0/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/opencsg" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/libxml2" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/cairo" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/lzo" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/libpng16" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/pixman-1" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/eigen3" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtCore" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/tools/qt5/mkspecs/win32-msvc" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtWidgets" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtGui" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtMultimedia" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtNetwork" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtOpenGL" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtConcurrent" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtSvg" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtDBus" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtGamepad" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_REENTRANT;UNICODE;_UNICODE;USE_MIMALLOC;MI_OVERRIDE;MI_LINK_STATIC;_USE_MATH_DEFINES;ENABLE_OPENCSG;OPENCSG_GLEW;ENABLE_CGAL;CGAL_DEBUG;CGAL_USE_GMPXX;ENABLE_LIBZIP;ENABLE_CAIRO;USE_GLEW;USE_QOPENGLWIDGET;ENABLE_DBUS;ENABLE_QGAMEPAD;OPENSCAD_VERSION=2024.09.10;OPENSCAD_SHORTVERSION=2024.09.10;OPENSCAD_YEAR=2024;OPENSCAD_MONTH=9;OPENSCAD_DAY=10;STACKSIZE=8388608;NOGDI;OPENSCAD_OS="Windows";CGAL_USE_GMPXX=1;CGAL_USE_CORE=1;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_CONCURRENT_LIB;QT_SVG_LIB;QT_DBUS_LIB;QT_GAMEPAD_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_REENTRANT;UNICODE;_UNICODE;USE_MIMALLOC;MI_OVERRIDE;MI_LINK_STATIC;_USE_MATH_DEFINES;ENABLE_OPENCSG;OPENCSG_GLEW;ENABLE_CGAL;CGAL_DEBUG;CGAL_USE_GMPXX;ENABLE_LIBZIP;ENABLE_CAIRO;USE_GLEW;USE_QOPENGLWIDGET;ENABLE_DBUS;ENABLE_QGAMEPAD;OPENSCAD_VERSION=2024.09.10;OPENSCAD_SHORTVERSION=2024.09.10;OPENSCAD_YEAR=2024;OPENSCAD_MONTH=9;OPENSCAD_DAY=10;STACKSIZE=8388608;NOGDI;OPENSCAD_OS=\"Windows\";CGAL_USE_GMPXX=1;CGAL_USE_CORE=1;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_CONCURRENT_LIB;QT_SVG_LIB;QT_DBUS_LIB;QT_GAMEPAD_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;D:\ThirdParty\openscad\submodules\mimalloc\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\harfbuzz;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\glib-2.0;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\lib\glib-2.0\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\opencsg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libxml2;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\cairo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\lzo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libpng16;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\pixman-1;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\eigen3;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtCore;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\mkspecs\win32-msvc;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtWidgets;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGui;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtMultimedia;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtNetwork;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtOpenGL;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtConcurrent;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtSvg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtDBus;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGamepad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;D:\ThirdParty\openscad\submodules\mimalloc\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\harfbuzz;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\glib-2.0;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\lib\glib-2.0\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\opencsg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libxml2;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\cairo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\lzo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libpng16;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\pixman-1;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\eigen3;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtCore;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\mkspecs\win32-msvc;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtWidgets;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGui;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtMultimedia;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtNetwork;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtOpenGL;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtConcurrent;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtSvg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtDBus;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGamepad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	Compiling language files</Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/ThirdParty/openscad/Release/openscad.exe -installedDir D:/ThirdParty/openscad/vcpkg_installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\msys64\usr\bin\sh.exe D:/ThirdParty/openscad/scripts/translation-make.sh 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>submodules\mimalloc\Release\mimalloc-static.lib;vcpkg_installed\x64-windows\lib\boost_filesystem-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_system-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_regex-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_program_options-vc140-mt.lib;vcpkg_installed\x64-windows\debug\lib\fontconfig.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\bz2.lib;vcpkg_installed\x64-windows\lib\libpng16.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlidec.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\lib\libexpat.lib;vcpkg_installed\x64-windows\debug\lib\glib-2.0.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\lib\pcre2-8.lib;vcpkg_installed\x64-windows\lib\double-conversion.lib;vcpkg_installed\x64-windows\lib\intl.lib;vcpkg_installed\x64-windows\lib\opencsg.lib;vcpkg_installed\x64-windows\lib\glew32.lib;opengl32.lib;glu32.lib;vcpkg_installed\x64-windows\lib\zip.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\libxml2.lib;vcpkg_installed\x64-windows\debug\lib\cairo.lib;vcpkg_installed\x64-windows\debug\lib\lzo2.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\fontconfig.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\lib\libexpat.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\bz2.lib;vcpkg_installed\x64-windows\lib\libpng16.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlidec.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\debug\lib\pixman-1.lib;vcpkg_installed\x64-windows\lib\Qt5Multimedia.lib;vcpkg_installed\x64-windows\lib\Qt5OpenGL.lib;vcpkg_installed\x64-windows\lib\Qt5Concurrent.lib;vcpkg_installed\x64-windows\lib\Qt5Network.lib;vcpkg_installed\x64-windows\lib\Qt5Svg.lib;vcpkg_installed\x64-windows\lib\qscintilla2_qt5.lib;vcpkg_installed\x64-windows\lib\Qt5DBus.lib;vcpkg_installed\x64-windows\lib\Qt5Gamepad.lib;psapi.lib;shell32.lib;user32.lib;advapi32.lib;bcrypt.lib;vcpkg_installed\x64-windows\debug\lib\glib-2.0.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\lib\pcre2-8.lib;vcpkg_installed\x64-windows\lib\intl.lib;vcpkg_installed\x64-windows\lib\opencsg.lib;vcpkg_installed\x64-windows\lib\zip.lib;vcpkg_installed\x64-windows\lib\libxml2.lib;vcpkg_installed\x64-windows\debug\lib\cairo.lib;vcpkg_installed\x64-windows\debug\lib\lzo2.lib;vcpkg_installed\x64-windows\debug\lib\pixman-1.lib;vcpkg_installed\x64-windows\lib\qscintilla2_qt5.lib;vcpkg_installed\x64-windows\lib\harfbuzz.lib;vcpkg_installed\x64-windows\lib\freetype.lib;opengl32.lib;glu32.lib;vcpkg_installed\x64-windows\debug\lib\gmpxx.lib;vcpkg_installed\x64-windows\debug\lib\mpfr.lib;vcpkg_installed\x64-windows\debug\lib\gmp.lib;vcpkg_installed\x64-windows\lib\Qt5Widgets.lib;vcpkg_installed\x64-windows\lib\Qt5Gui.lib;vcpkg_installed\x64-windows\lib\Qt5Core.lib;vcpkg_installed\x64-windows\lib\manual-link\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -subsystem:windows -stack:8388608</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ThirdParty/openscad/Release/openscad.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ThirdParty/openscad/Release/openscad.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/ThirdParty/openscad/submodules/mimalloc/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/harfbuzz" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/glib-2.0" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/lib/glib-2.0/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/opencsg" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/libxml2" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/cairo" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/lzo" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/libpng16" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/pixman-1" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/eigen3" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtCore" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/tools/qt5/mkspecs/win32-msvc" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtWidgets" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtGui" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtMultimedia" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtNetwork" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtOpenGL" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtConcurrent" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtSvg" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtDBus" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtGamepad" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_REENTRANT;UNICODE;_UNICODE;USE_MIMALLOC;MI_OVERRIDE;MI_LINK_STATIC;_USE_MATH_DEFINES;ENABLE_OPENCSG;OPENCSG_GLEW;ENABLE_CGAL;CGAL_DEBUG;CGAL_USE_GMPXX;ENABLE_LIBZIP;ENABLE_CAIRO;USE_GLEW;USE_QOPENGLWIDGET;ENABLE_DBUS;ENABLE_QGAMEPAD;OPENSCAD_VERSION=2024.09.10;OPENSCAD_SHORTVERSION=2024.09.10;OPENSCAD_YEAR=2024;OPENSCAD_MONTH=9;OPENSCAD_DAY=10;STACKSIZE=8388608;NOGDI;OPENSCAD_OS="Windows";CGAL_USE_GMPXX=1;CGAL_USE_CORE=1;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_CONCURRENT_LIB;QT_SVG_LIB;QT_DBUS_LIB;QT_GAMEPAD_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_REENTRANT;UNICODE;_UNICODE;USE_MIMALLOC;MI_OVERRIDE;MI_LINK_STATIC;_USE_MATH_DEFINES;ENABLE_OPENCSG;OPENCSG_GLEW;ENABLE_CGAL;CGAL_DEBUG;CGAL_USE_GMPXX;ENABLE_LIBZIP;ENABLE_CAIRO;USE_GLEW;USE_QOPENGLWIDGET;ENABLE_DBUS;ENABLE_QGAMEPAD;OPENSCAD_VERSION=2024.09.10;OPENSCAD_SHORTVERSION=2024.09.10;OPENSCAD_YEAR=2024;OPENSCAD_MONTH=9;OPENSCAD_DAY=10;STACKSIZE=8388608;NOGDI;OPENSCAD_OS=\"Windows\";CGAL_USE_GMPXX=1;CGAL_USE_CORE=1;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_CONCURRENT_LIB;QT_SVG_LIB;QT_DBUS_LIB;QT_GAMEPAD_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;D:\ThirdParty\openscad\submodules\mimalloc\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\harfbuzz;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\glib-2.0;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\lib\glib-2.0\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\opencsg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libxml2;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\cairo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\lzo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libpng16;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\pixman-1;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\eigen3;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtCore;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\mkspecs\win32-msvc;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtWidgets;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGui;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtMultimedia;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtNetwork;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtOpenGL;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtConcurrent;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtSvg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtDBus;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGamepad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;D:\ThirdParty\openscad\submodules\mimalloc\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\harfbuzz;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\glib-2.0;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\lib\glib-2.0\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\opencsg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libxml2;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\cairo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\lzo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libpng16;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\pixman-1;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\eigen3;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtCore;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\mkspecs\win32-msvc;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtWidgets;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGui;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtMultimedia;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtNetwork;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtOpenGL;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtConcurrent;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtSvg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtDBus;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGamepad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	Compiling language files</Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/ThirdParty/openscad/MinSizeRel/openscad.exe -installedDir D:/ThirdParty/openscad/vcpkg_installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\msys64\usr\bin\sh.exe D:/ThirdParty/openscad/scripts/translation-make.sh 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>submodules\mimalloc\MinSizeRel\mimalloc-static.lib;vcpkg_installed\x64-windows\lib\boost_filesystem-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_system-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_regex-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_program_options-vc140-mt.lib;vcpkg_installed\x64-windows\debug\lib\fontconfig.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\bz2.lib;vcpkg_installed\x64-windows\lib\libpng16.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlidec.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\lib\libexpat.lib;vcpkg_installed\x64-windows\debug\lib\glib-2.0.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\lib\pcre2-8.lib;vcpkg_installed\x64-windows\lib\double-conversion.lib;vcpkg_installed\x64-windows\lib\intl.lib;vcpkg_installed\x64-windows\lib\opencsg.lib;vcpkg_installed\x64-windows\lib\glew32.lib;opengl32.lib;glu32.lib;vcpkg_installed\x64-windows\lib\zip.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\libxml2.lib;vcpkg_installed\x64-windows\debug\lib\cairo.lib;vcpkg_installed\x64-windows\debug\lib\lzo2.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\fontconfig.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\lib\libexpat.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\bz2.lib;vcpkg_installed\x64-windows\lib\libpng16.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlidec.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\debug\lib\pixman-1.lib;vcpkg_installed\x64-windows\lib\Qt5Multimedia.lib;vcpkg_installed\x64-windows\lib\Qt5OpenGL.lib;vcpkg_installed\x64-windows\lib\Qt5Concurrent.lib;vcpkg_installed\x64-windows\lib\Qt5Network.lib;vcpkg_installed\x64-windows\lib\Qt5Svg.lib;vcpkg_installed\x64-windows\lib\qscintilla2_qt5.lib;vcpkg_installed\x64-windows\lib\Qt5DBus.lib;vcpkg_installed\x64-windows\lib\Qt5Gamepad.lib;psapi.lib;shell32.lib;user32.lib;advapi32.lib;bcrypt.lib;vcpkg_installed\x64-windows\debug\lib\glib-2.0.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\lib\pcre2-8.lib;vcpkg_installed\x64-windows\lib\intl.lib;vcpkg_installed\x64-windows\lib\opencsg.lib;vcpkg_installed\x64-windows\lib\zip.lib;vcpkg_installed\x64-windows\lib\libxml2.lib;vcpkg_installed\x64-windows\debug\lib\cairo.lib;vcpkg_installed\x64-windows\debug\lib\lzo2.lib;vcpkg_installed\x64-windows\debug\lib\pixman-1.lib;vcpkg_installed\x64-windows\lib\qscintilla2_qt5.lib;vcpkg_installed\x64-windows\lib\harfbuzz.lib;vcpkg_installed\x64-windows\lib\freetype.lib;opengl32.lib;glu32.lib;vcpkg_installed\x64-windows\debug\lib\gmpxx.lib;vcpkg_installed\x64-windows\debug\lib\mpfr.lib;vcpkg_installed\x64-windows\debug\lib\gmp.lib;vcpkg_installed\x64-windows\lib\Qt5Widgets.lib;vcpkg_installed\x64-windows\lib\Qt5Gui.lib;vcpkg_installed\x64-windows\lib\Qt5Core.lib;vcpkg_installed\x64-windows\lib\manual-link\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -subsystem:windows -stack:8388608</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ThirdParty/openscad/MinSizeRel/openscad.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ThirdParty/openscad/MinSizeRel/openscad.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/ThirdParty/openscad/submodules/mimalloc/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/harfbuzz" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/glib-2.0" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/lib/glib-2.0/include" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/opencsg" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/libxml2" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/cairo" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/lzo" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/libpng16" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/pixman-1" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/eigen3" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtCore" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/tools/qt5/mkspecs/win32-msvc" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtWidgets" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtGui" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtMultimedia" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtNetwork" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtOpenGL" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtConcurrent" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtSvg" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtDBus" /external:I "D:/ThirdParty/openscad/vcpkg_installed/x64-windows/include/qt5/QtGamepad" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_REENTRANT;UNICODE;_UNICODE;USE_MIMALLOC;MI_OVERRIDE;MI_LINK_STATIC;_USE_MATH_DEFINES;ENABLE_OPENCSG;OPENCSG_GLEW;ENABLE_CGAL;CGAL_DEBUG;CGAL_USE_GMPXX;ENABLE_LIBZIP;ENABLE_CAIRO;USE_GLEW;USE_QOPENGLWIDGET;ENABLE_DBUS;ENABLE_QGAMEPAD;OPENSCAD_VERSION=2024.09.10;OPENSCAD_SHORTVERSION=2024.09.10;OPENSCAD_YEAR=2024;OPENSCAD_MONTH=9;OPENSCAD_DAY=10;STACKSIZE=8388608;NOGDI;OPENSCAD_OS="Windows";CGAL_USE_GMPXX=1;CGAL_USE_CORE=1;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_CONCURRENT_LIB;QT_SVG_LIB;QT_DBUS_LIB;QT_GAMEPAD_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_REENTRANT;UNICODE;_UNICODE;USE_MIMALLOC;MI_OVERRIDE;MI_LINK_STATIC;_USE_MATH_DEFINES;ENABLE_OPENCSG;OPENCSG_GLEW;ENABLE_CGAL;CGAL_DEBUG;CGAL_USE_GMPXX;ENABLE_LIBZIP;ENABLE_CAIRO;USE_GLEW;USE_QOPENGLWIDGET;ENABLE_DBUS;ENABLE_QGAMEPAD;OPENSCAD_VERSION=2024.09.10;OPENSCAD_SHORTVERSION=2024.09.10;OPENSCAD_YEAR=2024;OPENSCAD_MONTH=9;OPENSCAD_DAY=10;STACKSIZE=8388608;NOGDI;OPENSCAD_OS=\"Windows\";CGAL_USE_GMPXX=1;CGAL_USE_CORE=1;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_MULTIMEDIA_LIB;QT_NETWORK_LIB;QT_OPENGL_LIB;QT_CONCURRENT_LIB;QT_SVG_LIB;QT_DBUS_LIB;QT_GAMEPAD_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;D:\ThirdParty\openscad\submodules\mimalloc\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\harfbuzz;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\glib-2.0;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\lib\glib-2.0\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\opencsg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libxml2;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\cairo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\lzo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libpng16;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\pixman-1;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\eigen3;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtCore;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\mkspecs\win32-msvc;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtWidgets;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGui;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtMultimedia;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtNetwork;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtOpenGL;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtConcurrent;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtSvg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtDBus;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGamepad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ThirdParty\openscad;D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo;D:\ThirdParty\openscad\src;D:\ThirdParty\openscad\src\core;D:\ThirdParty\openscad\src\core\customizer;D:\ThirdParty\openscad\src\ext;D:\ThirdParty\openscad\src\ext\json;D:\ThirdParty\openscad\src\ext\lexertl\include;D:\ThirdParty\openscad\src\ext\libtess2\Include;D:\ThirdParty\openscad\src\geometry;D:\ThirdParty\openscad\src\geometry\cgal;D:\ThirdParty\openscad\src\geometry\manifold;D:\ThirdParty\openscad\src\glview;D:\ThirdParty\openscad\src\glview\preview;D:\ThirdParty\openscad\src\glview\cgal;D:\ThirdParty\openscad\src\gui;D:\ThirdParty\openscad\src\io;D:\ThirdParty\openscad\src\platform;D:\ThirdParty\openscad\src\utils;D:\ThirdParty\openscad\submodules\mimalloc\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\harfbuzz;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\glib-2.0;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\lib\glib-2.0\include;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\opencsg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libxml2;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\cairo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\lzo;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\libpng16;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\pixman-1;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\eigen3;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtCore;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\mkspecs\win32-msvc;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtWidgets;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGui;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtMultimedia;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtNetwork;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtOpenGL;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtConcurrent;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtSvg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtDBus;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\include\qt5\QtGamepad;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	Compiling language files</Message>
+      <Command>setlocal
+"C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/ThirdParty/openscad/RelWithDebInfo/openscad.exe -installedDir D:/ThirdParty/openscad/vcpkg_installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\msys64\usr\bin\sh.exe D:/ThirdParty/openscad/scripts/translation-make.sh 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>submodules\mimalloc\RelWithDebInfo\mimalloc-static.lib;vcpkg_installed\x64-windows\lib\boost_filesystem-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_system-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_regex-vc140-mt.lib;vcpkg_installed\x64-windows\lib\boost_program_options-vc140-mt.lib;vcpkg_installed\x64-windows\debug\lib\fontconfig.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\bz2.lib;vcpkg_installed\x64-windows\lib\libpng16.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlidec.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\lib\libexpat.lib;vcpkg_installed\x64-windows\debug\lib\glib-2.0.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\lib\pcre2-8.lib;vcpkg_installed\x64-windows\lib\double-conversion.lib;vcpkg_installed\x64-windows\lib\intl.lib;vcpkg_installed\x64-windows\lib\opencsg.lib;vcpkg_installed\x64-windows\lib\glew32.lib;opengl32.lib;glu32.lib;vcpkg_installed\x64-windows\lib\zip.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\libxml2.lib;vcpkg_installed\x64-windows\debug\lib\cairo.lib;vcpkg_installed\x64-windows\debug\lib\lzo2.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\fontconfig.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\lib\libexpat.lib;vcpkg_installed\x64-windows\lib\freetype.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\lib\bz2.lib;vcpkg_installed\x64-windows\lib\libpng16.lib;vcpkg_installed\x64-windows\lib\zlib.lib;vcpkg_installed\x64-windows\debug\lib\brotlidec.lib;vcpkg_installed\x64-windows\debug\lib\brotlicommon.lib;vcpkg_installed\x64-windows\debug\lib\pixman-1.lib;vcpkg_installed\x64-windows\lib\Qt5Multimedia.lib;vcpkg_installed\x64-windows\lib\Qt5OpenGL.lib;vcpkg_installed\x64-windows\lib\Qt5Concurrent.lib;vcpkg_installed\x64-windows\lib\Qt5Network.lib;vcpkg_installed\x64-windows\lib\Qt5Svg.lib;vcpkg_installed\x64-windows\lib\qscintilla2_qt5.lib;vcpkg_installed\x64-windows\lib\Qt5DBus.lib;vcpkg_installed\x64-windows\lib\Qt5Gamepad.lib;psapi.lib;shell32.lib;user32.lib;advapi32.lib;bcrypt.lib;vcpkg_installed\x64-windows\debug\lib\glib-2.0.lib;vcpkg_installed\x64-windows\debug\lib\intl.lib;vcpkg_installed\x64-windows\lib\pcre2-8.lib;vcpkg_installed\x64-windows\lib\intl.lib;vcpkg_installed\x64-windows\lib\opencsg.lib;vcpkg_installed\x64-windows\lib\zip.lib;vcpkg_installed\x64-windows\lib\libxml2.lib;vcpkg_installed\x64-windows\debug\lib\cairo.lib;vcpkg_installed\x64-windows\debug\lib\lzo2.lib;vcpkg_installed\x64-windows\debug\lib\pixman-1.lib;vcpkg_installed\x64-windows\lib\qscintilla2_qt5.lib;vcpkg_installed\x64-windows\lib\harfbuzz.lib;vcpkg_installed\x64-windows\lib\freetype.lib;opengl32.lib;glu32.lib;vcpkg_installed\x64-windows\debug\lib\gmpxx.lib;vcpkg_installed\x64-windows\debug\lib\mpfr.lib;vcpkg_installed\x64-windows\debug\lib\gmp.lib;vcpkg_installed\x64-windows\lib\Qt5Widgets.lib;vcpkg_installed\x64-windows\lib\Qt5Gui.lib;vcpkg_installed\x64-windows\lib\Qt5Core.lib;vcpkg_installed\x64-windows\lib\manual-link\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 -subsystem:windows -stack:8388608</AdditionalOptions>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ThirdParty/openscad/RelWithDebInfo/openscad.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ThirdParty/openscad/RelWithDebInfo/openscad.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\8054ee4d28b4853c91e5995a35a79af7\openscad_interface.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating openscad_interface.cpp, openscad_interface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+vcpkg_installed\x64-windows\tools\qt5\bin\qdbusxml2cpp.exe -m -p openscad_interface D:/ThirdParty/openscad/org.openscad.OpenSCAD.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\org.openscad.OpenSCAD.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\openscad_interface.cpp;D:\ThirdParty\openscad\openscad_interface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating openscad_interface.cpp, openscad_interface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+vcpkg_installed\x64-windows\tools\qt5\bin\qdbusxml2cpp.exe -m -p openscad_interface D:/ThirdParty/openscad/org.openscad.OpenSCAD.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\org.openscad.OpenSCAD.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\openscad_interface.cpp;D:\ThirdParty\openscad\openscad_interface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating openscad_interface.cpp, openscad_interface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+vcpkg_installed\x64-windows\tools\qt5\bin\qdbusxml2cpp.exe -m -p openscad_interface D:/ThirdParty/openscad/org.openscad.OpenSCAD.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\org.openscad.OpenSCAD.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\openscad_interface.cpp;D:\ThirdParty\openscad\openscad_interface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating openscad_interface.cpp, openscad_interface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+vcpkg_installed\x64-windows\tools\qt5\bin\qdbusxml2cpp.exe -m -p openscad_interface D:/ThirdParty/openscad/org.openscad.OpenSCAD.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\org.openscad.OpenSCAD.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\openscad_interface.cpp;D:\ThirdParty\openscad\openscad_interface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\8054ee4d28b4853c91e5995a35a79af7\openscad_interface.moc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating openscad_interface.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\moc.exe @D:/ThirdParty/openscad/openscad_interface.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\openscad_interface.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\openscad_interface.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating openscad_interface.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\moc.exe @D:/ThirdParty/openscad/openscad_interface.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\openscad_interface.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\openscad_interface.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating openscad_interface.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\moc.exe @D:/ThirdParty/openscad/openscad_interface.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\openscad_interface.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\openscad_interface.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating openscad_interface.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\moc.exe @D:/ThirdParty/openscad/openscad_interface.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\openscad_interface.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\openscad_interface.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\8054ee4d28b4853c91e5995a35a79af7\openscad_adaptor.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating openscad_adaptor.cpp, openscad_adaptor.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+vcpkg_installed\x64-windows\tools\qt5\bin\qdbusxml2cpp.exe -m -a openscad_adaptor -i gui/input/DBusInputDriver.h -l DBusInputDriver D:/ThirdParty/openscad/org.openscad.OpenSCAD.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\org.openscad.OpenSCAD.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\openscad_adaptor.cpp;D:\ThirdParty\openscad\openscad_adaptor.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating openscad_adaptor.cpp, openscad_adaptor.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+vcpkg_installed\x64-windows\tools\qt5\bin\qdbusxml2cpp.exe -m -a openscad_adaptor -i gui/input/DBusInputDriver.h -l DBusInputDriver D:/ThirdParty/openscad/org.openscad.OpenSCAD.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\org.openscad.OpenSCAD.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\openscad_adaptor.cpp;D:\ThirdParty\openscad\openscad_adaptor.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating openscad_adaptor.cpp, openscad_adaptor.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+vcpkg_installed\x64-windows\tools\qt5\bin\qdbusxml2cpp.exe -m -a openscad_adaptor -i gui/input/DBusInputDriver.h -l DBusInputDriver D:/ThirdParty/openscad/org.openscad.OpenSCAD.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\org.openscad.OpenSCAD.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\openscad_adaptor.cpp;D:\ThirdParty\openscad\openscad_adaptor.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating openscad_adaptor.cpp, openscad_adaptor.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+vcpkg_installed\x64-windows\tools\qt5\bin\qdbusxml2cpp.exe -m -a openscad_adaptor -i gui/input/DBusInputDriver.h -l DBusInputDriver D:/ThirdParty/openscad/org.openscad.OpenSCAD.xml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\org.openscad.OpenSCAD.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\openscad_adaptor.cpp;D:\ThirdParty\openscad\openscad_adaptor.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\8054ee4d28b4853c91e5995a35a79af7\openscad_adaptor.moc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating openscad_adaptor.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\moc.exe @D:/ThirdParty/openscad/openscad_adaptor.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\openscad_adaptor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\openscad_adaptor.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating openscad_adaptor.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\moc.exe @D:/ThirdParty/openscad/openscad_adaptor.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\openscad_adaptor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\openscad_adaptor.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating openscad_adaptor.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\moc.exe @D:/ThirdParty/openscad/openscad_adaptor.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\openscad_adaptor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\openscad_adaptor.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating openscad_adaptor.moc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\moc.exe @D:/ThirdParty/openscad/openscad_adaptor.moc_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\openscad_adaptor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\openscad_adaptor.moc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\38bf8c449c63d509425ec8207863e3fc\qrc_common.cpp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for resources/common.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/ThirdParty/openscad/CMakeFiles/OpenSCAD_autogen.dir/AutoRcc_common_3YJK5W5UP7_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\resources\common.qrc;D:\ThirdParty\openscad\CMakeFiles\OpenSCAD_autogen.dir\AutoRcc_common_3YJK5W5UP7_Info.json;D:\ThirdParty\openscad\resources\icons\openscad.png;D:\ThirdParty\openscad\resources\sounds\complete.wav;D:\ThirdParty\openscad\resources\html\PrintInitDialog.html;D:\ThirdParty\openscad\resources\html\OctoPrintInfo.html;D:\ThirdParty\openscad\resources\html\AboutDialog.html;D:\ThirdParty\openscad\resources\icons\prefsFeatures.png;D:\ThirdParty\openscad\resources\icons\prefs3DPrint.png;D:\ThirdParty\openscad\resources\icons\information-icons-question.png;D:\ThirdParty\openscad\resources\icons\background.png;D:\ThirdParty\openscad\resources\icons\close.png;D:\ThirdParty\openscad\resources\icons\prefsEditor.png;D:\ThirdParty\openscad\resources\icons\information-icons-info.png;D:\ThirdParty\openscad\resources\icons\prefsAdvanced.png;D:\ThirdParty\openscad\resources\icons\prefsUpdate.png;D:\ThirdParty\openscad\resources\icons\background-welcome-screen.svg;D:\ThirdParty\openscad\resources\icons\stopbutton.png;D:\ThirdParty\openscad\resources\icons\prefsInputButtons.png;D:\ThirdParty\openscad\resources\icons\prefs3DView.png;D:\ThirdParty\openscad\resources\icons\prefsInputAxis.png;D:\ThirdParty\openscad\resources\icons\button.png;D:\ThirdParty\openscad\resources\icons\information-icons-warning.png;D:\ThirdParty\openscad\resources\icons\prefsInput.png;D:\ThirdParty\openscad\resources\icons\information-icons-error.png;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-back.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-right-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\open-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-pdf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-in-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-all-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_disabled-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\wireframe-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-svg-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\undo-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_pause-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-obj.svg;D:\ThirdParty\openscad\resources\icons\svg-default\wireframe.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-pause-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\redo-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-out.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_pause.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-wrl.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-csg-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\indent-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\redo.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-off-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-out.svg;D:\ThirdParty\openscad\resources\icons\svg-default\save-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-obj-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-3mf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-forward-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-stl.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-start.svg;D:\ThirdParty\openscad\resources\icons\svg-default\surface.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-right.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-in.svg;D:\ThirdParty\openscad\resources\icons\svg-default\unindent.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-ang.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-front.svg;D:\ThirdParty\openscad\resources\icons\svg-default\axes-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-play.svg;D:\ThirdParty\openscad\resources\icons\svg-default\render.svg;D:\ThirdParty\openscad\resources\icons\svg-default\axes.svg;D:\ThirdParty\openscad\resources\icons\svg-default\scalemarkers.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-back-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-end-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-dist-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\preview.svg;D:\ThirdParty\openscad\resources\icons\svg-default\open.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-forward.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-pause.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_disabled.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-pdf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\save.svg;D:\ThirdParty\openscad\resources\icons\svg-default\throwntogether-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-off.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-amf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\reset-view-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\crosshairs-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\render-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\send-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-stl-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\orthogonal.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-end.svg;D:\ThirdParty\openscad\resources\icons\svg-default\crosshairs.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-wrl-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-in.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-3mf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-svg.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-png.svg;D:\ThirdParty\openscad\resources\icons\svg-default\orthogonal-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-start-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-dist.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-all.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-bottom.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-left-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-left.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-csg.svg;D:\ThirdParty\openscad\resources\icons\svg-default\perspective.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-png-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-top.svg;D:\ThirdParty\openscad\resources\icons\svg-default\send.svg;D:\ThirdParty\openscad\resources\icons\svg-default\indent.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-amf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-bottom-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\preview-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-play-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-back-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-back.svg;D:\ThirdParty\openscad\resources\icons\svg-default\new.svg;D:\ThirdParty\openscad\resources\icons\svg-default\scalemarkers-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\unindent-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\reset-view.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-front-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-out-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\surface-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\undo.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-out-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\new-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\show-edges.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-dxf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-dxf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-in-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-ang-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\show-edges-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\throwntogether.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-top-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\perspective-white.svg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ThirdParty\openscad\OpenSCAD_autogen\3YJK5W5UP7\qrc_common.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for resources/common.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/ThirdParty/openscad/CMakeFiles/OpenSCAD_autogen.dir/AutoRcc_common_3YJK5W5UP7_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\resources\common.qrc;D:\ThirdParty\openscad\CMakeFiles\OpenSCAD_autogen.dir\AutoRcc_common_3YJK5W5UP7_Info.json;D:\ThirdParty\openscad\resources\icons\openscad.png;D:\ThirdParty\openscad\resources\sounds\complete.wav;D:\ThirdParty\openscad\resources\html\PrintInitDialog.html;D:\ThirdParty\openscad\resources\html\OctoPrintInfo.html;D:\ThirdParty\openscad\resources\html\AboutDialog.html;D:\ThirdParty\openscad\resources\icons\prefsFeatures.png;D:\ThirdParty\openscad\resources\icons\prefs3DPrint.png;D:\ThirdParty\openscad\resources\icons\information-icons-question.png;D:\ThirdParty\openscad\resources\icons\background.png;D:\ThirdParty\openscad\resources\icons\close.png;D:\ThirdParty\openscad\resources\icons\prefsEditor.png;D:\ThirdParty\openscad\resources\icons\information-icons-info.png;D:\ThirdParty\openscad\resources\icons\prefsAdvanced.png;D:\ThirdParty\openscad\resources\icons\prefsUpdate.png;D:\ThirdParty\openscad\resources\icons\background-welcome-screen.svg;D:\ThirdParty\openscad\resources\icons\stopbutton.png;D:\ThirdParty\openscad\resources\icons\prefsInputButtons.png;D:\ThirdParty\openscad\resources\icons\prefs3DView.png;D:\ThirdParty\openscad\resources\icons\prefsInputAxis.png;D:\ThirdParty\openscad\resources\icons\button.png;D:\ThirdParty\openscad\resources\icons\information-icons-warning.png;D:\ThirdParty\openscad\resources\icons\prefsInput.png;D:\ThirdParty\openscad\resources\icons\information-icons-error.png;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-back.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-right-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\open-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-pdf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-in-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-all-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_disabled-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\wireframe-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-svg-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\undo-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_pause-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-obj.svg;D:\ThirdParty\openscad\resources\icons\svg-default\wireframe.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-pause-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\redo-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-out.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_pause.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-wrl.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-csg-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\indent-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\redo.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-off-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-out.svg;D:\ThirdParty\openscad\resources\icons\svg-default\save-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-obj-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-3mf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-forward-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-stl.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-start.svg;D:\ThirdParty\openscad\resources\icons\svg-default\surface.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-right.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-in.svg;D:\ThirdParty\openscad\resources\icons\svg-default\unindent.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-ang.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-front.svg;D:\ThirdParty\openscad\resources\icons\svg-default\axes-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-play.svg;D:\ThirdParty\openscad\resources\icons\svg-default\render.svg;D:\ThirdParty\openscad\resources\icons\svg-default\axes.svg;D:\ThirdParty\openscad\resources\icons\svg-default\scalemarkers.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-back-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-end-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-dist-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\preview.svg;D:\ThirdParty\openscad\resources\icons\svg-default\open.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-forward.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-pause.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_disabled.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-pdf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\save.svg;D:\ThirdParty\openscad\resources\icons\svg-default\throwntogether-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-off.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-amf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\reset-view-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\crosshairs-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\render-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\send-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-stl-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\orthogonal.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-end.svg;D:\ThirdParty\openscad\resources\icons\svg-default\crosshairs.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-wrl-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-in.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-3mf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-svg.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-png.svg;D:\ThirdParty\openscad\resources\icons\svg-default\orthogonal-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-start-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-dist.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-all.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-bottom.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-left-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-left.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-csg.svg;D:\ThirdParty\openscad\resources\icons\svg-default\perspective.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-png-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-top.svg;D:\ThirdParty\openscad\resources\icons\svg-default\send.svg;D:\ThirdParty\openscad\resources\icons\svg-default\indent.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-amf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-bottom-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\preview-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-play-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-back-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-back.svg;D:\ThirdParty\openscad\resources\icons\svg-default\new.svg;D:\ThirdParty\openscad\resources\icons\svg-default\scalemarkers-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\unindent-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\reset-view.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-front-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-out-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\surface-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\undo.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-out-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\new-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\show-edges.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-dxf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-dxf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-in-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-ang-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\show-edges-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\throwntogether.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-top-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\perspective-white.svg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ThirdParty\openscad\OpenSCAD_autogen\3YJK5W5UP7\qrc_common.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for resources/common.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/ThirdParty/openscad/CMakeFiles/OpenSCAD_autogen.dir/AutoRcc_common_3YJK5W5UP7_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\resources\common.qrc;D:\ThirdParty\openscad\CMakeFiles\OpenSCAD_autogen.dir\AutoRcc_common_3YJK5W5UP7_Info.json;D:\ThirdParty\openscad\resources\icons\openscad.png;D:\ThirdParty\openscad\resources\sounds\complete.wav;D:\ThirdParty\openscad\resources\html\PrintInitDialog.html;D:\ThirdParty\openscad\resources\html\OctoPrintInfo.html;D:\ThirdParty\openscad\resources\html\AboutDialog.html;D:\ThirdParty\openscad\resources\icons\prefsFeatures.png;D:\ThirdParty\openscad\resources\icons\prefs3DPrint.png;D:\ThirdParty\openscad\resources\icons\information-icons-question.png;D:\ThirdParty\openscad\resources\icons\background.png;D:\ThirdParty\openscad\resources\icons\close.png;D:\ThirdParty\openscad\resources\icons\prefsEditor.png;D:\ThirdParty\openscad\resources\icons\information-icons-info.png;D:\ThirdParty\openscad\resources\icons\prefsAdvanced.png;D:\ThirdParty\openscad\resources\icons\prefsUpdate.png;D:\ThirdParty\openscad\resources\icons\background-welcome-screen.svg;D:\ThirdParty\openscad\resources\icons\stopbutton.png;D:\ThirdParty\openscad\resources\icons\prefsInputButtons.png;D:\ThirdParty\openscad\resources\icons\prefs3DView.png;D:\ThirdParty\openscad\resources\icons\prefsInputAxis.png;D:\ThirdParty\openscad\resources\icons\button.png;D:\ThirdParty\openscad\resources\icons\information-icons-warning.png;D:\ThirdParty\openscad\resources\icons\prefsInput.png;D:\ThirdParty\openscad\resources\icons\information-icons-error.png;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-back.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-right-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\open-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-pdf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-in-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-all-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_disabled-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\wireframe-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-svg-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\undo-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_pause-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-obj.svg;D:\ThirdParty\openscad\resources\icons\svg-default\wireframe.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-pause-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\redo-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-out.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_pause.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-wrl.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-csg-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\indent-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\redo.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-off-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-out.svg;D:\ThirdParty\openscad\resources\icons\svg-default\save-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-obj-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-3mf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-forward-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-stl.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-start.svg;D:\ThirdParty\openscad\resources\icons\svg-default\surface.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-right.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-in.svg;D:\ThirdParty\openscad\resources\icons\svg-default\unindent.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-ang.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-front.svg;D:\ThirdParty\openscad\resources\icons\svg-default\axes-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-play.svg;D:\ThirdParty\openscad\resources\icons\svg-default\render.svg;D:\ThirdParty\openscad\resources\icons\svg-default\axes.svg;D:\ThirdParty\openscad\resources\icons\svg-default\scalemarkers.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-back-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-end-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-dist-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\preview.svg;D:\ThirdParty\openscad\resources\icons\svg-default\open.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-forward.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-pause.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_disabled.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-pdf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\save.svg;D:\ThirdParty\openscad\resources\icons\svg-default\throwntogether-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-off.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-amf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\reset-view-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\crosshairs-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\render-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\send-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-stl-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\orthogonal.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-end.svg;D:\ThirdParty\openscad\resources\icons\svg-default\crosshairs.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-wrl-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-in.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-3mf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-svg.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-png.svg;D:\ThirdParty\openscad\resources\icons\svg-default\orthogonal-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-start-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-dist.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-all.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-bottom.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-left-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-left.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-csg.svg;D:\ThirdParty\openscad\resources\icons\svg-default\perspective.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-png-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-top.svg;D:\ThirdParty\openscad\resources\icons\svg-default\send.svg;D:\ThirdParty\openscad\resources\icons\svg-default\indent.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-amf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-bottom-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\preview-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-play-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-back-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-back.svg;D:\ThirdParty\openscad\resources\icons\svg-default\new.svg;D:\ThirdParty\openscad\resources\icons\svg-default\scalemarkers-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\unindent-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\reset-view.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-front-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-out-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\surface-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\undo.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-out-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\new-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\show-edges.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-dxf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-dxf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-in-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-ang-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\show-edges-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\throwntogether.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-top-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\perspective-white.svg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ThirdParty\openscad\OpenSCAD_autogen\3YJK5W5UP7\qrc_common.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for resources/common.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\ThirdParty\openscad
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc D:/ThirdParty/openscad/CMakeFiles/OpenSCAD_autogen.dir/AutoRcc_common_3YJK5W5UP7_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\resources\common.qrc;D:\ThirdParty\openscad\CMakeFiles\OpenSCAD_autogen.dir\AutoRcc_common_3YJK5W5UP7_Info.json;D:\ThirdParty\openscad\resources\icons\openscad.png;D:\ThirdParty\openscad\resources\sounds\complete.wav;D:\ThirdParty\openscad\resources\html\PrintInitDialog.html;D:\ThirdParty\openscad\resources\html\OctoPrintInfo.html;D:\ThirdParty\openscad\resources\html\AboutDialog.html;D:\ThirdParty\openscad\resources\icons\prefsFeatures.png;D:\ThirdParty\openscad\resources\icons\prefs3DPrint.png;D:\ThirdParty\openscad\resources\icons\information-icons-question.png;D:\ThirdParty\openscad\resources\icons\background.png;D:\ThirdParty\openscad\resources\icons\close.png;D:\ThirdParty\openscad\resources\icons\prefsEditor.png;D:\ThirdParty\openscad\resources\icons\information-icons-info.png;D:\ThirdParty\openscad\resources\icons\prefsAdvanced.png;D:\ThirdParty\openscad\resources\icons\prefsUpdate.png;D:\ThirdParty\openscad\resources\icons\background-welcome-screen.svg;D:\ThirdParty\openscad\resources\icons\stopbutton.png;D:\ThirdParty\openscad\resources\icons\prefsInputButtons.png;D:\ThirdParty\openscad\resources\icons\prefs3DView.png;D:\ThirdParty\openscad\resources\icons\prefsInputAxis.png;D:\ThirdParty\openscad\resources\icons\button.png;D:\ThirdParty\openscad\resources\icons\information-icons-warning.png;D:\ThirdParty\openscad\resources\icons\prefsInput.png;D:\ThirdParty\openscad\resources\icons\information-icons-error.png;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-back.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-right-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\open-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-pdf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-in-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-all-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_disabled-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\wireframe-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-svg-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\undo-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_pause-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-obj.svg;D:\ThirdParty\openscad\resources\icons\svg-default\wireframe.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-pause-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\redo-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-out.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_pause.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-wrl.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-csg-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\indent-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\redo.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-off-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-out.svg;D:\ThirdParty\openscad\resources\icons\svg-default\save-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-obj-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-3mf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-forward-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-stl.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-start.svg;D:\ThirdParty\openscad\resources\icons\svg-default\surface.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-right.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-in.svg;D:\ThirdParty\openscad\resources\icons\svg-default\unindent.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-ang.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-front.svg;D:\ThirdParty\openscad\resources\icons\svg-default\axes-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-play.svg;D:\ThirdParty\openscad\resources\icons\svg-default\render.svg;D:\ThirdParty\openscad\resources\icons\svg-default\axes.svg;D:\ThirdParty\openscad\resources\icons\svg-default\scalemarkers.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-back-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-end-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-dist-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\preview.svg;D:\ThirdParty\openscad\resources\icons\svg-default\open.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-step-forward.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-pause.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate_disabled.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-pdf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\save.svg;D:\ThirdParty\openscad\resources\icons\svg-default\throwntogether-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-off.svg;D:\ThirdParty\openscad\resources\icons\svg-default\animate.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-amf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\reset-view-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\crosshairs-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\render-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\send-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-stl-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\orthogonal.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-end.svg;D:\ThirdParty\openscad\resources\icons\svg-default\crosshairs.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-wrl-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-in.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-3mf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-svg.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-png.svg;D:\ThirdParty\openscad\resources\icons\svg-default\orthogonal-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-start-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-dist.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-all.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-bottom.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-left-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-left.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-csg.svg;D:\ThirdParty\openscad\resources\icons\svg-default\perspective.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-png-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-top.svg;D:\ThirdParty\openscad\resources\icons\svg-default\send.svg;D:\ThirdParty\openscad\resources\icons\svg-default\indent.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-amf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-bottom-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\preview-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\vcr-control-play-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-back-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-back.svg;D:\ThirdParty\openscad\resources\icons\svg-default\new.svg;D:\ThirdParty\openscad\resources\icons\svg-default\scalemarkers-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\unindent-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\reset-view.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-front-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-text-out-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\surface-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\undo.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-out-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\new-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\show-edges.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-dxf-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\export-dxf.svg;D:\ThirdParty\openscad\resources\icons\svg-default\zoom-in-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\measure-ang-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\show-edges-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\throwntogether.svg;D:\ThirdParty\openscad\resources\icons\svg-default\view-top-white.svg;D:\ThirdParty\openscad\resources\icons\svg-default\perspective-white.svg;D:\ThirdParty\openscad\vcpkg_installed\x64-windows\tools\qt5\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ThirdParty\openscad\OpenSCAD_autogen\3YJK5W5UP7\qrc_common.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-applyops.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-applyops-hybrid.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-applyops-hybrid-minkowski.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-closed.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-convex.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-corefine.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-kernel.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-hybrid.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-mesh.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-minkowski.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-nef.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-orient.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-polyhedron.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-project.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-tess.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-triangulate.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\CGALHybridPolyhedron.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\CGAL_Nef_polyhedron.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\CGALCache.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_nef.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_nef.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\openscad.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\Feature.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\FontCache.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\handle_dep.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\LibraryInfo.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\RenderStatistic.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\version.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Arguments.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Builtins.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\BuiltinContext.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\CgalAdvNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Children.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ColorNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Context.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ContextFrame.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ContextMemoryManager.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\control.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\CSGNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\CsgOpNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\CSGTreeEvaluator.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\customizer\Annotation.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\customizer\CommentParser.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\EvaluationSession.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Expression.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\builtin_functions.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\function.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\FunctionType.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ImportNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\LinearExtrudeNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\LocalScope.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ScopeContext.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\module.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\node.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\NodeDumper.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\OffsetNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Parameters.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\parsersettings.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\primitives.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\progress.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ProjectionNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\RenderNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\RenderVariables.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\DrawingCallback.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\RotateExtrudeNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\SurfaceNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\TextNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\TransformNode.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\UndefType.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Value.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Assignment.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\AST.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\FreetypeRenderer.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\GroupModule.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ModuleInstantiation.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\NodeVisitor.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\SourceFile.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\SourceFileCache.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\StatCache.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\UserModule.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Tree.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\customizer\ParameterObject.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\customizer\ParameterSet.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\lodepng\lodepng.cpp" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\polyclipping\clipper.cpp" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\bucketalloc.c" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\dict.c" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\geom.c" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\mesh.c" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\priorityq.c" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\sweep.c" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\tess.c" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\ClipperUtils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\Geometry.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\GeometryCache.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\GeometryUtils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\Polygon2d.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\linalg.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\PolySet.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\PolySetBuilder.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\PolySetUtils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\GeometryEvaluator.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\linear_extrude.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\boolean_utils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\OffscreenContextFactory.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\RenderSettings.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\Camera.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\ColorMap.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\preview\CSGTreeNormalizer.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\DxfData.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\dxfdim.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_amf.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_dxf.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_obj.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_off.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_wrl.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_pdf.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_stl.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_svg.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_param.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\fileutils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_amf.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_stl.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_obj.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_off.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_svg.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_json.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\circle.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\data.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\ellipse.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\group.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\libsvg.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\line.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\path.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\polygon.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\polyline.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\rect.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\shape.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\svgpage.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\text.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\transformation.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\tspan.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\use.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\util.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\platform\PlatformUtils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\boost-utils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\calc.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\degree_trig.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\hash.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\printutils.cc" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\utils\StackCheck.h" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\svg.cc" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\utils\version_check.h" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_3mf_dummy.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_3mf_dummy.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\imageutils-lodepng.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\platform\PlatformUtils-win.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\offscreen-old\OffscreenContextWGL.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\objects\lexer.cxx" />
+    <ClInclude Include="D:\ThirdParty\openscad\objects\lexer.hxx" />
+    <ClCompile Include="D:\ThirdParty\openscad\objects\parser.cxx" />
+    <ClInclude Include="D:\ThirdParty\openscad\objects\parser.hxx" />
+    <ClCompile Include="D:\ThirdParty\openscad\objects\comment_lexer.cxx" />
+    <ClInclude Include="D:\ThirdParty\openscad\objects\comment_lexer.hxx" />
+    <ClCompile Include="D:\ThirdParty\openscad\objects\comment_parser.cxx" />
+    <ClInclude Include="D:\ThirdParty\openscad\objects\comment_parser.hxx" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\OpenGLContext.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\fbo.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\Renderer.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\system-gl.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\VertexArray.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\VertexState.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\VBORenderer.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\GLView.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\hershey.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\OffscreenView.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\cgal\CGALRenderer.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\cgal\CGALRenderUtils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\preview\OpenCSGRenderer.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\preview\ThrownTogetherRenderer.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_png.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\imageutils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\glew-utils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\QGamepadInputDriver.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\AutoUpdater.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\CGALWorker.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ViewportControl.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Console.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Dock.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Editor.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ErrorLog.cc" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\EventFilter.h" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ExportPdfDialog.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\FontListDialog.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\FontListTableView.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\InitConfigurator.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\LaunchingScreen.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\LibraryInfoDialog.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\MainWindow.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Measurement.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Animate.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\MouseSelector.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\OctoPrint.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\OpenCSGWarningDialog.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\OpenSCADApp.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Preferences.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\PrintInitDialog.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\PrintService.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ProgressWidget.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\QGLView.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\QGLView2.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\QSettingsCached.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\QWordSearchField.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ScadApi.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ScadLexer.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ScintillaEditor.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Settings.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\SettingsWriter.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\TabManager.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\TabWidget.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\UIUtils.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\WindowManager.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\IgnoreWheelWhenNotFocused.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\AxisConfigWidget.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\ButtonConfigWidget.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\InputDriver.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\InputDriverManager.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\InputEventMapper.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\GroupWidget.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterCheckBox.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterComboBox.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSlider.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSpinBox.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterText.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVector.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVirtualWidget.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterWidget.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\DBusInputDriver.cc" />
+    <ClCompile Include="D:\ThirdParty\openscad\openscad_interface.cpp" />
+    <ClInclude Include="D:\ThirdParty\openscad\openscad_interface.h" />
+    <None Include="D:\ThirdParty\openscad\openscad_interface.moc">
+    </None>
+    <ClCompile Include="D:\ThirdParty\openscad\openscad_adaptor.cpp" />
+    <ClInclude Include="D:\ThirdParty\openscad\openscad_adaptor.h" />
+    <None Include="D:\ThirdParty\openscad\openscad_adaptor.moc">
+    </None>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\AboutDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Network.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\NetworkSignal.h" />
+    <None Include="D:\ThirdParty\openscad\src\gui\AboutDialog.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\Animate.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\Console.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\ErrorLog.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\ExportPdfDialog.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\FontListDialog.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\LaunchingScreen.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\LibraryInfoDialog.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\MainWindow.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\OpenCSGWarningDialog.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\Preferences.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\PrintInitDialog.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\ProgressWidget.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\ViewportControl.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\input\AxisConfigWidget.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\input\ButtonConfigWidget.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterCheckBox.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterComboBox.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterDescriptionWidget.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSlider.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSpinBox.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterText.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVector.ui">
+    </None>
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterWidget.ui">
+    </None>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Animate.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\AppleEvents.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\AutoUpdater.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\CGALWorker.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Console.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Dock.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Editor.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ErrorLog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ExportPdfDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\FontListDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\FontListTableView.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\IgnoreWheelWhenNotFocused.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\InitConfigurator.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\LaunchingScreen.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\LibraryInfoDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\MainWindow.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\MouseSelector.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\OctoPrint.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\OpenCSGWarningDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\OpenSCADApp.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Preferences.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\PrintInitDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\PrintService.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ProgressWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\QGLView.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\QSettingsCached.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\QWordSearchField.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ScadApi.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ScadLexer.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ScintillaEditor.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Settings.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\SettingsWriter.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\TabManager.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\TabWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\UIUtils.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ViewportControl.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\WindowManager.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\qt-obsolete.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\qtgettext.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\GroupWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterCheckBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterComboBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSlider.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSpinBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterText.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVector.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVirtualWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterWidget.h" />
+    <None Include="D:\ThirdParty\openscad\resources\common.qrc">
+    </None>
+    <ResourceCompile Include="D:\ThirdParty\openscad\openscad_win32.rc" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_AboutDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_Animate.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_Console.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_ErrorLog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_ExportPdfDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_FontListDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_LaunchingScreen.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_LibraryInfoDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_MainWindow.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_OpenCSGWarningDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_Preferences.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_PrintInitDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_ProgressWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_ViewportControl.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\input\ui_AxisConfigWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\input\ui_ButtonConfigWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterCheckBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterComboBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterDescriptionWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterSlider.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterSpinBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterText.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterVector.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterWidget.h" />
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\3YJK5W5UP7\qrc_common.cpp" />
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_AboutDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_Animate.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_Console.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_ErrorLog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_ExportPdfDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_FontListDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_LaunchingScreen.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_LibraryInfoDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_MainWindow.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_OpenCSGWarningDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_Preferences.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_PrintInitDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_ProgressWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_ViewportControl.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\input\ui_AxisConfigWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\input\ui_ButtonConfigWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterCheckBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterComboBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterDescriptionWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterSlider.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterSpinBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterText.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterVector.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterWidget.h" />
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_AboutDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_Animate.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_Console.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_ErrorLog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_ExportPdfDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_FontListDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_LaunchingScreen.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_LibraryInfoDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_MainWindow.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_OpenCSGWarningDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_Preferences.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_PrintInitDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_ProgressWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_ViewportControl.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\input\ui_AxisConfigWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\input\ui_ButtonConfigWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterCheckBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterComboBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterDescriptionWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterSlider.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterSpinBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterText.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterVector.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterWidget.h" />
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_AboutDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_Animate.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_Console.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_ErrorLog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_ExportPdfDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_FontListDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_LaunchingScreen.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_LibraryInfoDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_MainWindow.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_OpenCSGWarningDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_Preferences.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_PrintInitDialog.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_ProgressWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_ViewportControl.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\input\ui_AxisConfigWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\input\ui_ButtonConfigWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterCheckBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterComboBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterDescriptionWidget.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterSlider.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterSpinBox.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterText.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterVector.h" />
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\ThirdParty\openscad\OpenSCAD_autogen.vcxproj">
+      <Project>{06CDA564-52A6-331D-B872-FEF7041C0AAA}</Project>
+      <Name>OpenSCAD_autogen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\ThirdParty\openscad\submodules\mimalloc\mimalloc-static.vcxproj">
+      <Project>{F148ED39-7EA2-36AA-AE6A-FDA2A114D386}</Project>
+      <Name>mimalloc-static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

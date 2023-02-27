@@ -1,0 +1,1257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-applyops.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-applyops-hybrid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-applyops-hybrid-minkowski.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-closed.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-convex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-corefine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-kernel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-hybrid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-mesh.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-minkowski.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-nef.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-orient.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-polyhedron.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-project.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-tess.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\cgalutils-triangulate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\CGALHybridPolyhedron.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\CGAL_Nef_polyhedron.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\cgal\CGALCache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_nef.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_nef.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\openscad.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\Feature.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\FontCache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\handle_dep.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\LibraryInfo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\RenderStatistic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\version.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Arguments.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Builtins.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\BuiltinContext.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\CgalAdvNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Children.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ColorNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Context.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ContextFrame.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ContextMemoryManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\control.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\CSGNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\CsgOpNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\CSGTreeEvaluator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\customizer\Annotation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\customizer\CommentParser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\EvaluationSession.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Expression.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\builtin_functions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\function.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\FunctionType.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ImportNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\LinearExtrudeNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\LocalScope.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ScopeContext.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\module.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\node.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\NodeDumper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\OffsetNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Parameters.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\parsersettings.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\primitives.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\progress.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ProjectionNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\RenderNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\RenderVariables.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\DrawingCallback.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\RotateExtrudeNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\SurfaceNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\TextNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\TransformNode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\UndefType.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Value.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Assignment.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\AST.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\FreetypeRenderer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\GroupModule.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\ModuleInstantiation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\NodeVisitor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\SourceFile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\SourceFileCache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\StatCache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\UserModule.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\Tree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\customizer\ParameterObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\core\customizer\ParameterSet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\lodepng\lodepng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\polyclipping\clipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\bucketalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\dict.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\geom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\mesh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\priorityq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\sweep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\ext\libtess2\Source\tess.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\ClipperUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\Geometry.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\GeometryCache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\GeometryUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\Polygon2d.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\linalg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\PolySet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\PolySetBuilder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\PolySetUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\GeometryEvaluator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\linear_extrude.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\geometry\boolean_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\OffscreenContextFactory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\RenderSettings.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\Camera.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\ColorMap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\preview\CSGTreeNormalizer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\DxfData.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\dxfdim.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_amf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_dxf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_obj.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_off.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_wrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_pdf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_stl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_svg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_param.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\fileutils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_amf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_stl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_obj.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_off.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_svg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_json.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\circle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\data.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\ellipse.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\group.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\libsvg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\line.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\path.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\polygon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\polyline.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\rect.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\shape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\svgpage.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\text.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\transformation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\tspan.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\use.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\libsvg\util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\platform\PlatformUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\boost-utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\calc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\degree_trig.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\hash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\printutils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\utils\svg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_3mf_dummy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\import_3mf_dummy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\imageutils-lodepng.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\platform\PlatformUtils-win.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\offscreen-old\OffscreenContextWGL.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\objects\lexer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\objects\parser.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\objects\comment_lexer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\objects\comment_parser.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\OpenGLContext.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\fbo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\Renderer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\system-gl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\VertexArray.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\VertexState.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\VBORenderer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\GLView.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\hershey.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\OffscreenView.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\cgal\CGALRenderer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\cgal\CGALRenderUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\preview\OpenCSGRenderer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\preview\ThrownTogetherRenderer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\export_png.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\io\imageutils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\glview\glew-utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\QGamepadInputDriver.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\AutoUpdater.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\CGALWorker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ViewportControl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Console.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Dock.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Editor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ErrorLog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ExportPdfDialog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\FontListDialog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\FontListTableView.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\InitConfigurator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\LaunchingScreen.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\LibraryInfoDialog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\MainWindow.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Measurement.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Animate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\MouseSelector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\OctoPrint.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\OpenCSGWarningDialog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\OpenSCADApp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Preferences.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\PrintInitDialog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\PrintService.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ProgressWidget.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\QGLView.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\QGLView2.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\QSettingsCached.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\QWordSearchField.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ScadApi.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ScadLexer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\ScintillaEditor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\Settings.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\SettingsWriter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\TabManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\TabWidget.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\UIUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\WindowManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\IgnoreWheelWhenNotFocused.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\AxisConfigWidget.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\ButtonConfigWidget.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\InputDriver.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\InputDriverManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\InputEventMapper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\GroupWidget.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterCheckBox.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterComboBox.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSlider.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSpinBox.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterText.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVirtualWidget.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterWidget.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\src\gui\input\DBusInputDriver.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\openscad_interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\openscad_adaptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\3YJK5W5UP7\qrc_common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ThirdParty\openscad\OpenSCAD_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ThirdParty\openscad\src\utils\StackCheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\utils\version_check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\objects\lexer.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\objects\parser.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\objects\comment_lexer.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\objects\comment_parser.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\EventFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\openscad_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\openscad_adaptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\AboutDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\NetworkSignal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Animate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\AppleEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\AutoUpdater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\CGALWorker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Dock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Editor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ErrorLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ExportPdfDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\FontListDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\FontListTableView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\IgnoreWheelWhenNotFocused.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\InitConfigurator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\LaunchingScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\LibraryInfoDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\MouseSelector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\OctoPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\OpenCSGWarningDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\OpenSCADApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\PrintInitDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\PrintService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ProgressWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\QGLView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\QSettingsCached.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\QWordSearchField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ScadApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ScadLexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ScintillaEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\SettingsWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\TabManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\TabWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\UIUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\ViewportControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\WindowManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\qt-obsolete.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\qtgettext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\GroupWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterCheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSlider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSpinBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVirtualWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_AboutDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_Animate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_ErrorLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_ExportPdfDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_FontListDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_LaunchingScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_LibraryInfoDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_OpenCSGWarningDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_Preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_PrintInitDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_ProgressWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\ui_ViewportControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\input\ui_AxisConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\input\ui_ButtonConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterCheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterDescriptionWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterSlider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterSpinBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Debug\src\gui\parameter\ui_ParameterWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_AboutDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_Animate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_ErrorLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_ExportPdfDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_FontListDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_LaunchingScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_LibraryInfoDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_OpenCSGWarningDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_Preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_PrintInitDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_ProgressWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\ui_ViewportControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\input\ui_AxisConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\input\ui_ButtonConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterCheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterDescriptionWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterSlider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterSpinBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_Release\src\gui\parameter\ui_ParameterWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_AboutDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_Animate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_ErrorLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_ExportPdfDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_FontListDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_LaunchingScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_LibraryInfoDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_OpenCSGWarningDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_Preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_PrintInitDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_ProgressWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\ui_ViewportControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\input\ui_AxisConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\input\ui_ButtonConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterCheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterDescriptionWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterSlider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterSpinBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_MinSizeRel\src\gui\parameter\ui_ParameterWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_AboutDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_Animate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_ErrorLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_ExportPdfDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_FontListDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_LaunchingScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_LibraryInfoDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_OpenCSGWarningDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_Preferences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_PrintInitDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_ProgressWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\ui_ViewportControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\input\ui_AxisConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\input\ui_ButtonConfigWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterCheckBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterDescriptionWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterSlider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterSpinBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ThirdParty\openscad\OpenSCAD_autogen\include_RelWithDebInfo\src\gui\parameter\ui_ParameterWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\8054ee4d28b4853c91e5995a35a79af7\openscad_interface.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\8054ee4d28b4853c91e5995a35a79af7\openscad_interface.moc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\8054ee4d28b4853c91e5995a35a79af7\openscad_adaptor.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\8054ee4d28b4853c91e5995a35a79af7\openscad_adaptor.moc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ThirdParty\openscad\CMakeFiles\38bf8c449c63d509425ec8207863e3fc\qrc_common.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\ThirdParty\openscad\openscad_interface.moc" />
+    <None Include="D:\ThirdParty\openscad\openscad_adaptor.moc" />
+    <None Include="D:\ThirdParty\openscad\src\gui\AboutDialog.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\Animate.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\Console.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\ErrorLog.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\ExportPdfDialog.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\FontListDialog.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\LaunchingScreen.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\LibraryInfoDialog.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\MainWindow.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\OpenCSGWarningDialog.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\Preferences.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\PrintInitDialog.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\ProgressWidget.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\ViewportControl.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\input\AxisConfigWidget.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\input\ButtonConfigWidget.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterCheckBox.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterComboBox.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterDescriptionWidget.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSlider.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterSpinBox.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterText.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterVector.ui" />
+    <None Include="D:\ThirdParty\openscad\src\gui\parameter\ParameterWidget.ui" />
+    <None Include="D:\ThirdParty\openscad\resources\common.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\ThirdParty\openscad\openscad_win32.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0098C3FF-875D-3460-86D3-2662D725FEF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C12D376C-9318-3FB7-B6FE-F518047BBBF0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BFFA0A61-C6DC-320B-9CD0-7ADE9236DD1A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
