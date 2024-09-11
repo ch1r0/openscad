@@ -114,7 +114,11 @@ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/submodules/sanitizers-cmake/cmake" ${
 find_package(Sanitizers)
 
 # Strict c++17, e.g. no GNU extensions
-set_property(TARGET OpenSCAD PROPERTY CXX_STANDARD 17)
+# set_property(TARGET OpenSCAD PROPERTY CXX_STANDARD 17)
+
+# Some code in OpenSCAD uses Designated initializers which calls for C++ 20
+set_property(TARGET OpenSCAD PROPERTY CXX_STANDARD 20)
+
 set_property(TARGET OpenSCAD PROPERTY CXX_EXTENSIONS OFF)
 set_property(TARGET OpenSCAD PROPERTY CXX_STANDARD_REQUIRED ON)
 # Output compilation database (compile_commands.json), so we can e.g. run clang-tidy or other tools separately
