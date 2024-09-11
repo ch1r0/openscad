@@ -505,6 +505,9 @@ if(NOT MSVC)
     set(LIB3MF_SOURCES src/io/export_3mf_dummy.cc src/io/import_3mf_dummy.cc)
     message(STATUS "lib3mf: disabled")
   endif()
+else()
+  set(LIB3MF_SOURCES src/io/export_3mf_dummy.cc src/io/import_3mf_dummy.cc)
+  message(STATUS "lib3mf: disabled")
 endif()
 
 # Automatically add the current source and build directories to the include path.
