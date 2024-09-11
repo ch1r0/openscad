@@ -45,6 +45,7 @@
 #endif
 
 // #include "Preferences.h"
+#undef max
 
 CGALRenderer::CGALRenderer(const std::shared_ptr<const class Geometry> &geom) {
   this->addGeometry(geom);
